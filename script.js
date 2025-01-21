@@ -1,1 +1,1 @@
-alert("Teste de JavaScript")
+// alert("Teste de JavaScript")
