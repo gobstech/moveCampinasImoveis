@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #C3AC6C;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.logo {
+    flex: auto;
+}
+
+.logo > img {
+    /* border: 1px solid red; */
+    margin-left: 35px;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+    transition: 0.3s all ease-in-out;
+}
+
+.nav, .lista {
+    display: flex;
+    /* border: 1px solid red; */
+}
+
+.lista {
+    /* border: 1px solid blue; */
+    margin-right: 35px;
+}
+
+.item, .item-ultimo {
+    list-style: none;
+    font-size: 25px;
+}
+
+.item {
+    margin: 0 10px;
+}
+
+.item-ultimo {
+    margin: 0 0 0 10px;
+}
+
+.descricao-campinas {
+    padding: 10px;
+    background-color: #151e45;
+    opacity: 0.8;
+    color: white;
+    text-align: center;
+}
+
+.titulo-descricao, .descricao {
+    margin: 10px 0;
+    text-align: center;
+}
+
+@media only screen and (max-width: 840px) {
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav, .lista {
+        display: block;
+        /* border: 1px solid red; */
+    }
+}
