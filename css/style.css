@@ -1,11 +1,58 @@
+@import url(fonts.css);
+@import url(normalize.css);
+@import url(reset.css);
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* .float -> .myFloat: fonte do site https://codepen.io/demoonkevin/pen/MvPEpV */
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:45px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+    z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    width: 10px;
+    background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 10px;
+    background-color: #004aad;
+}
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Open Sans", "Arial", Helvetica, sans-serif;
+}
+
+h2 {
+    font-weight: normal;
+}
+
+.banner {
+    height: auto;
 }
 
 .navbar {
@@ -15,6 +62,14 @@ body {
     background-color: #C3AC6C;
     flex-direction: row;
     flex-wrap: wrap;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    overflow: hidden;
+}
+
+.inicio {
+    margin-top: 93px;
 }
 
 .logo {
@@ -22,12 +77,11 @@ body {
 }
 
 .logo > img {
-    /* border: 1px solid red; */
-    margin-left: 35px;
+    margin-left: 30px;
 }
 
 .link {
-    color: white;
+    color: #151e45;
     text-decoration: none;
 }
 
@@ -38,18 +92,18 @@ body {
 
 .nav, .lista {
     display: flex;
-    /* border: 1px solid red; */
 }
 
 .lista {
-    /* border: 1px solid blue; */
     margin-right: 35px;
     text-align: center;
 }
 
 .item, .item-ultimo {
+    color: #151e45;
     list-style: none;
-    font-size: 25px;
+    font-size: 16px;
+    /* font-weight: bold; */
 }
 
 .item {
@@ -63,17 +117,25 @@ body {
 .descricao-campinas {
     padding: 10px;
     background-color: #151e45;
-    opacity: 0.8;
+    /* opacity: 0.8; */
     color: white;
     text-align: center;
 }
 
-.titulo-descricao, .descricao, .scroll {
+.titulo-descricao {
+    font-size: 30px;
+}
+
+.descricao {
+    font-size: 16px;
+}
+
+.titulo-descricao, .descricao {
     margin: 10px 25px;
     text-align: center;
 }
 
-.banner.campinas, .banner.saude {
+.banner.campinas {
     background-color: #C3AC6C;
     padding: 50px 10px;
     display: flex;
@@ -81,55 +143,356 @@ body {
     align-items: center;
 }
 
-.texto-inovacao,.slide-inovacao {
+.texto-inovacao,.slide-inovacao, .mapa {
     flex: auto;
 }
 
-.texto-inovacao, .texto-saude {
+.texto-inovacao {
     margin: 10px 35px;
     color: white;
 }
 
-.slide-inovacao, .slide-saude {
+.slide-inovacao {
     margin-top: 15px;
     margin-bottom: 12px;
     margin-right: 35px;
 }
 
+.slide-inovacao > img {
+    border-radius: 4px;
+}
+
+.slide-swiss > img {
+    border-radius: 4px;
+}
+
 .texto-inovacao > h1, .texto-inovacao > h2, .texto-inovacao > p {
     margin: 10px 0px;
+    color: #151e45;
+}
+
+.texto-inovacao > h1 {
+    font-size: 30px;
+}
+
+.texto-inovacao > h2 {
+    font-size: 16px;
+    font-weight: normal;
 }
 
 .texto-inovacao > p {
-    margin-right: 80px;
+    font-size: 16px;
+    text-align: justify;
 }
 
-.banner.educacao {
-    background-color: #151e45;
+.slide-swiss {
+    display: flex;
+    align-items: center;
+    flex: auto;
+    margin: 17px 35px;
+}
+
+.banner.swiss-park {
+    background-color: #2e61bc;
     padding: 50px 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.slide-educacao {
-    display: flex;
-    align-items: center;
-    flex: auto;
-    margin: 17px 30px;
+.texto-swiss-park > h1, .texto-swiss-park > h2, .texto-swiss-park > p {
+    text-align: end;
+    margin: 10px 0px;
 }
 
-.texto-educacao {
+.texto-swiss-park {
     margin-top: 10px;
     margin-bottom: 10px;
     margin-right: 35px;
-    margin-left: 125px;
     color: white;
 }
 
-.texto-educacao > h1, .texto-educacao > h2, .texto-educacao > p {
+.texto-swiss-park > h1 {
+    font-size: 30px;
+}
+
+.texto-swiss-park > h2 {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.texto-swiss-park > p {
+    font-size: 16px;
     text-align: end;
+    margin-left: 20px;
+}
+
+.banner.local {
+    background-color: #f2f5f9;
+    padding: 50px 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.mapa {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 35px;
+}
+
+.mapa > iframe {
+    border-radius: 4px;
+}
+
+.texto-mapa {
+    margin: 10px 32px;
+}
+
+.titulo-mapa {
+    font-size: 30px;
     margin: 10px 0px;
+}
+
+.p-mapa {
+    font-size: 16px;
+    margin: 10px 0px;
+    color: black;
+}
+
+.banner.ofertas-imoveis {
+    background-color: #004aad;
+    padding: 50px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo-imoveis-ofertas {
+    color: white;
+    margin: 10px 0px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.descricao-imoveis-ofertas {
+    color: white;
+    margin: 10px 0px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.grid-ofertas {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 10px 0px;
+}
+
+.imagem-casa {
+    margin: 10px 0px;
+}
+
+.oferta {
+    margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+    width: 700px;
+    border-radius: 4px;
+}
+
+.titulo-desc-casa {
+    font-size: 30px;
+    margin: 10px 0px;
+}
+
+.informacoes {
+    text-align: justify;
+    list-style: inside;
+}
+
+.item-info {
+    margin: 10px 0px;
+}
+
+.btns-imovel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+
+.btns-imovel > a {
+    margin: 10px;
+}
+
+.saiba-mais, .planta-imovel, .interesse {
+    width: 180px;
+    height: 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 2px;
+}
+
+.saiba-mais {
+    background-color: #C3AC6C;
+    color: white;
+}
+
+.planta-imovel {
+    background-color: #5b5b5b;
+    color: white;
+    border: 1px solid black;
+}
+
+.interesse {
+    background-color: #151e45;
+    color: white;
+}
+
+.setas {
+    color: white;
+    font-size: 30px;
+}
+
+.setas > i {
+    margin: 10px;
+}
+
+.banner.contato {
+    background-color: #5b5b5b;
+    padding: 50px 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.form-contato {
+    display: flex;
+    align-items: center;
+    flex: auto;
+    margin: 17px 37px;
+}
+
+.form-contato > form {
+    align-items: center;
+    background-color: white;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    border-radius: 4px;
+}
+
+.campo {
+    width: 300px;
+    height: 30px;
+}
+
+textarea {
+    width: 300px;
+    height: 200px;
+    resize: none;
+}
+
+.titulo-contato, .p-contato {
+    text-align: end;
+    color: white;
+    margin-right: 35px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.titulo-contato {
+    font-size: 30px;
+}
+
+.p-contato {
+    font-size: 16px;
+}
+
+.campo, .legenda {
+    margin: 5px 0px;
+}
+
+.btn-enviar {
+    margin: 5px 0px;
+    border: none;
+    padding: 10px;
+    color: white;
+    background-color: #151e45;
+    border-radius: 4px;
+}
+ 
+.banner.rodape {
+    height: auto;
+    background-color: #151e45;
+    padding: 50px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-rodape {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.imagem-logo, .redes-sociais, .mapa-site, .contato-rodape {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 0 50px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+
+.link-redes {
+    margin: 5px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.titulo-redes, .titulo-mapa-site, .titulo-contato-rodape {
+    font-size: 30px;
+    font-weight: normal;
+    margin: 10px 0px;
+    color: #C3AC6C;
+    text-transform: uppercase;
+    /* border: 1px solid white; */
+}
+
+.lista-mapa-site, .lista-rodape-contato {
+    list-style: none;
+}
+
+.item-mapa-site, .itens-contato {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.item-mapa-site:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    padding: 5px;
+    background-color: #C3AC6C;
+    color: white;
+}
+
+.copyright-rodape {
+    text-align: center;
+    font-weight: normal;
 }
 
 @media only screen and (max-width: 840px) {

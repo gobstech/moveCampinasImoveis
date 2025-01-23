@@ -9,42 +9,42 @@
     <link rel="stylesheet" href="css/fontawesome-free-6.7.2-web/css/fontawesome.min.css">
 </head>
 <body>
+    <script src="script.js"></script>
+    <!-- Botão do WhatsApp Fonte: https://codepen.io/demoonkevin/pen/MvPEpV -->
+    <a href="https://api.whatsapp.com/send?phone=5511998210922" class="float" target="_blank">
+        <i class="fa-brands fa-whatsapp my-float"></i>
+    </a>
     <div class="navbar" id="navbar">
         <div class="logo" id="logo">
             <img src="images/logo-navbar.png" alt="Logotipo Move Campinas Imóveis">
         </div>
         <div class="nav" id="nav">
             <ul class="lista" id="lista">
-                <a href="" class="link" id="link">
+                <a href="#campinas" class="link" id="link">
                     <li class="item" id="item">Campinas</li>
                 </a>
-                <a href="" class="link" id="link">
+                <a href="#swiss-park" class="link" id="link">
                     <li class="item" id="item">Swiss Park</li>
                 </a>
-                <a href="" class="link" id="link">
+                <a href="#" class="link" id="link">
                     <li class="item" id="item">Imóveis</li>
                 </a>
-                <a href="" class="link" id="link">
-                    <li class="item" id="item">Localização</li>
-                </a>
-                <a href="" class="link" id="link">
+                <a href="#" class="link" id="link">
                     <li class="item-ultimo" id="item-ultimo">Contato</li>
                 </a>
             </ul>
         </div>
     </div>
-
     <div class="inicio" id="inicio">
-        <div class="video-background" id="video-background">
+        <div class="video-background" id="video-background" style="text-align: center;">
             em breve
         </div>
         <div class="descricao-campinas" id="descricao-campinas">
             <h1 class="titulo-descricao" id="titulo-descricao">O melhor de Campinas, agora ao seu alcance.</h1>
-            <p class="descricao" id="descricao">Swiss Park é mais do que um bairro: é um estilo de vida! Imagine acordar todos os dias em um ambiente seguro, cercado por natureza e com toda a infraestrutura que você precisa ao seu alcance. Com um blend perfeito de tranquilidade e conveniência, o Swiss Park oferece qualidade de vida inigualável. E Campinas? Campinas é sinônimo de desenvolvimento, cultura e oportunidades!</p> 
-            <div class="scroll" id="scroll"><i class="fa-solid fa-arrow-down"></i> Scroll Down</div>
+            <p class="descricao" id="descricao">Swiss Park é mais do que um bairro, é um estilo de vida! </p> 
+            <p class="descricao" id="descricao">Imagine acordar todos os dias em um ambiente seguro, cercado por natureza e com toda a infraestrutura que você precisa ao seu alcance. Com um <i>blend</i> perfeito de tranquilidade e conveniência, o Swiss Park oferece qualidade de vida inigualável. E Campinas? Campinas é sinônimo de desenvolvimento, cultura e oportunidades!</p> 
         </div>
     </div>
-
     <div class="banner campinas" id="campinas">
         <div class="texto-inovacao" id="texto-inovacao">
             <h1>Campinas</h1>
@@ -55,30 +55,161 @@
             <img src="images/catedral_metrolpolitana.jpg" alt="Slide de fotos">
         </div>
     </div>
-
-    <div class="banner educacao" id="educacao">
-        <div class="slide-educacao" id="slide-educacao">
-            <img src="images/unicamp.jpg" alt="Slide de fotos">
+    <div class="banner swiss-park" id="swiss-park">
+        <div class="slide-swiss" id="slide-swiss">
+            <img src="images/relogio.jpg" alt="Slide de fotos">
         </div>
-        <div class="texto-educacao" id="texto-educacao">
-            <h1>Campinas</h1>
-            <h2>Educação de qualidade e futuro promissor</h2>
-            <p>Campinas abriga renomadas instituições de ensino superior, como a Unicamp (Universidade Estadual de Campinas), uma das melhores universidades do país. Além disso, a cidade conta com diversas faculdades particulares e escolas de ensino fundamental e médio, oferecendo uma educação de qualidade e preparando os jovens para os desafios do mercado de trabalho.</p>
-        </div>
-    </div>
-
-    <div class="banner saude" id="saude">
-        <div class="texto-saude" id="texto-saude">
-            <h1>Campinas</h1>
-            <h2>Saúde de ponta e bem-estar</h2>
-            <p>A rede hospitalar de Campinas é referência em todo o país, com hospitais particulares e públicos de alta complexidade, oferecendo atendimento de excelência em diversas especialidades médicas. A cidade também investe em programas de promoção da saúde e prevenção de doenças, garantindo o bem-estar da população.</p>
-        </div>
-        <div class="slide-saude" id="slide-saude">
-            <img src="images/sao-luiz.jpg" alt="Slide de fotos">
+        <div class="texto-swiss-park" id="texto-swiss-park">
+            <h1>Swiss Park</h1>
+            <h2>Quase um cidade só que melhor!</h2>
+            <p>O Swiss Park, em Campinas, é muito mais do que um bairro planejado. É um estilo de vida que oferece uma série de oportunidades para seus moradores, combinando qualidade de vida, infraestrutura completa e um ambiente seguro e tranquilo.</p>
         </div>
     </div>
-
-
-    <script src="script.js"></script>
+    <div class="banner local" id="local">
+        <div class="texto-mapa" id="texto-mapa">
+            <h1 class="titulo-mapa">Localização</h1>
+            <p class="p-mapa">Confira a localização do Swiss Park e do seu entorno</p>
+        </div>
+        <div class="mapa" id="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27934.62278790824!2d-47.111486427842664!3d-22.965166339210345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8c95be2b77315%3A0xd36a9ae3c484e484!2sSwiss%20Park%2C%20Campinas%20-%20SP!5e1!3m2!1spt-BR!2sbr!4v1737567828204!5m2!1spt-BR!2sbr" width="700" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <div class="banner ofertas-imoveis" id="ofertas-imoveis">
+        <div class="titulo" id="titulo">
+            <h1 class="titulo-imoveis-ofertas" id="titulo-imoveis-ofertas">Imóveis</h1>
+            <p class="descricao-imoveis-ofertas" id="descricao-imoveis-ofertas">
+                Confira nossas mais recentes ofertas de imóveis à venda 
+            </p>
+        </div>
+        <div class="imoveis-ofertas" id="imoveis-ofertas">
+            <div class="grid-ofertas" id="grid-ofertas">
+                <div class="oferta" id="oferta">
+                    <div class="imagem-casa" id="imagem-casa">
+                        <img src="images/casa1.png" alt="">
+                    </div>
+                    <div class="desc-casa" id="desc-casa">
+                        <h1 class="titulo-desc-casa" id="titulo-desc-casa">Sobrado Residencial Glarus</h1>
+                        <ul class="informacoes" id="informacoes">
+                            <li class="item-info" id="item-info">Garagem para 2 carros</li>
+                            <li class="item-info" id="item-info">3 Suítes</li>
+                            <li class="item-info" id="item-info">Churrasqueira</li>
+                            <li class="item-info" id="item-info">Pisicina</li>
+                            <li class="item-info" id="item-info">Terreno 12m x 30m</li>
+                            <li class="item-info" id="item-info">270m² de área total construída</li>
+                            <li class="item-info" id="item-info">Preparação para instalar ar condicionado</li>
+                            <li class="item-info" id="item-info">Presença de placas para energia solar</li>
+                        </ul>
+                        <div class="btns-imovel" id="btns-imovel">
+                            <a href="#"><button class="saiba-mais" id="saiba-mais">Saiba Mais</button></a>
+                            <a href="#"><button class="planta-imovel" id="saiba-mais">Ver a planta do imóvel</button></a>
+                            <a href="#"><button class="interesse" id="saiba-mais">Tenho interesse!</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="oferta" id="oferta">
+                    <div class="imagem-casa" id="imagem-casa">
+                        <img src="images/casa1.png" alt="">
+                    </div>
+                    <div class="desc-casa" id="desc-casa">
+                        <h1 class="titulo-desc-casa" id="titulo-desc-casa">Casa Térrea Residencial Biel</h1>
+                        <ul class="informacoes" id="informacoes">
+                            <li class="item-info" id="item-info">Garagem para 2 carros</li>
+                            <li class="item-info" id="item-info">3 Suítes</li>
+                            <li class="item-info" id="item-info">Churrasqueira</li>
+                            <li class="item-info" id="item-info">Pisicina</li>
+                            <li class="item-info" id="item-info">Terreno 12m x 30m</li>
+                            <li class="item-info" id="item-info">270m² de área total construída</li>
+                            <li class="item-info" id="item-info">Preparação para instalar ar condicionado</li>
+                            <li class="item-info" id="item-info">Presença de placas para energia solar</li>
+                        </ul>
+                        <div class="btns-imovel" id="btns-imovel">
+                            <a href="#"><button class="saiba-mais" id="saiba-mais">Saiba Mais</button></a>
+                            <a href="#"><button class="planta-imovel" id="saiba-mais">Ver a planta do imóvel</button></a>
+                            <a href="#"><button class="interesse" id="saiba-mais">Tenho interesse!</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="setas" id="setas">
+            <i class="fa-solid fa-arrow-left"></i>
+            <i class="fa-solid fa-arrow-right"></i>
+        </div>
+    </div>
+    <div class="banner contato" id="contato">
+        <div class="form-contato" id="form-contato">
+            <form>
+                <label for="" class="legenda">Nome completo</label>
+                <input type="text" class="campo">
+                <label for="" class="legenda">Email</label>
+                <input type="email" class="campo"> 
+                <label for="" class="legenda">Telefone</label>
+                <input type="tel" class="campo">
+                <label for="" class="legenda">Mensagem</label>
+                <textarea name="mensagem" id=""></textarea>
+                <input type="button" value="Enviar" class="btn-enviar">
+            </form>
+        </div>
+        <div class="texto-contato" id="texto-contato">
+            <h1 class="titulo-contato">Contato</h1>
+            <p class="p-contato">Demonstra interesse por uma de nossas ofertas no Swiss Park?</p>
+            <p class="p-contato">Entre em contato conosco através do formulário a seguir</p>
+        </div>
+    </div>
+    <div class="banner rodape" id="rodape">
+        <div class="grid-rodape" id="grid-rodape">
+            <div class="imagem-logo" id="imagem-logo">
+                <img src="images/logo-rodape.png" alt="Logotipo Move Campinas Imóveis no rodapé">
+            </div>
+            <div class="redes-sociais" id="redes-sociais">
+                <h2 class="titulo-redes">Redes sociais</h2>
+                <div class="redes-icones" id="redes-icones">
+                    <a href="#" class="link-redes" id="link-redes">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="#" class="link-redes" id="redes-sociais">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="link-redes" id="link-redes">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                    <a href="#" class="link-redes" id="link-redes">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="#" class="link-redes" id="link-redes">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="mapa-site" id="mapa-site">
+                <h2 class="titulo-mapa-site">Mapa do site</h2>
+                <ul class="lista-mapa-site">
+                    <a href="#" class="item-mapa-site">
+                        <li class="item-mapa-site">Campinas</li>
+                    </a>
+                    <a href="#" class="item-mapa-site">
+                        <li class="item-mapa-site">Swiss Park</li>
+                    </a>
+                    <a href="#" class="item-mapa-site">
+                        <li class="item-mapa-site">Imóveis</li>
+                    </a>
+                    <a href="#" class="item-mapa-site">
+                        <li class="item-mapa-site">Contato</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="contato-rodape" id="contato-rodape">
+                <h2 class="titulo-contato-rodape" id="titulo-contato-rodape">Contato</h2>
+                <ul class="lista-rodape-contato" id="lista-rodape-contato">
+                    <li class="itens-contato" id="itens-contato">Email: email@email.com</li>
+                    <li class="itens-contato" id="itens-contato">Telefone: (DDD) 00000-0000</li>
+                    <li class="itens-contato" id="itens-contato">Endereço: Rua Ali, 12</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="copyright" id="copyright">
+        <h3 class="copyright-rodape">© 2025 Move Campinas Imóveis - Todos os direitos reservados</h3>
+    </div>
 </body>
 </html>
