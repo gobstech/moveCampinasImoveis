@@ -158,8 +158,10 @@ h2 {
     margin-right: 35px;
 }
 
-.slide-inovacao > img {
-    border-radius: 4px;
+.slide-inovacao > video {
+    border-radius: 8px;
+    width: 700px;
+    height: 400px;
 }
 
 .slide-swiss > img {
@@ -301,7 +303,7 @@ h2 {
     text-align: center;
     padding: 10px;
     background-color: white;
-    width: 700px;
+    width: 600px;
     border-radius: 4px;
 }
 
@@ -312,7 +314,8 @@ h2 {
 
 .informacoes {
     text-align: justify;
-    list-style: inside;
+    list-style: none;
+    margin: 0 15px;
 }
 
 .item-info {
