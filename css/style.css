@@ -164,8 +164,10 @@ h2 {
     height: 400px;
 }
 
-.slide-swiss > img {
-    border-radius: 4px;
+.slide-swiss > video {
+    border-radius: 8px;
+    width: 700px;
+    height: 400px;
 }
 
 .texto-inovacao > h1, .texto-inovacao > h2, .texto-inovacao > p {
