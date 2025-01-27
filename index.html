@@ -9,41 +9,34 @@
     <link rel="stylesheet" href="css/fontawesome-free-6.7.2-web/css/fontawesome.min.css">
 </head>
 <body>
-    <script src="script.js"></script>
-    <a href="https://api.whatsapp.com/send?phone=5511998210977" class="float" target="_blank">
-        <i class="fa-brands fa-whatsapp my-float"></i>
-    </a>
-    <div class="navbar" id="navbar">
-        <div class="logo" id="logo">
-            <a href="index.html"><img src="images/logo-rodape.png" alt="Logotipo Move Campinas Imóveis"></a>
-        </div>
-        <div class="nav" id="nav">
-            <ul class="lista" id="lista">
-                <a href="#campinas" class="link" id="link">
-                    <li class="item" id="item">Campinas</li>
-                </a>
-                <a href="#swiss-park" class="link" id="link">
-                    <li class="item" id="item">Swiss Park</li>
-                </a>
-                <a href="#imoveis-ofertas" class="link" id="link">
-                    <li class="item" id="item">Imóveis</li>
-                </a>
-                <a href="#contato" class="link" id="link">
-                    <li class="item-ultimo" id="item-ultimo">Contato</li>
-                </a>
+    <a class="float-button" target="_blank" href="https://faq.whatsapp.com/general/chats/how-to-use-click-to-chat/?lang=en">
+        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+        <span>Entrar em contato<span>
+      </a>
+    <header id="header">
+        <a href=""><img src="images/logo.png" alt="Logo"></a>
+        <nav id="nav">
+            <button id="btn-mobile">Menu
+                <span id="hamburguer"></span>
+            </button>
+            <ul id="menu">
+                <li><a class="link" href="">Campinas</a></li>
+                <li><a class="link" href="">Swiss Park</a></li>
+                <li><a class="link" href="">Imóveis</a></li>
+                <li><a class="link" href="">Contato</a></li>
             </ul>
-        </div>
-    </div>
-    <div class="inicio" id="inicio">
+        </nav>
+    </header>
+    <div class="banner inicio" id="inicio">
         <div class="image-background" id="image-background">
            <img src="images/swiss-park.png" alt="Paisagem da cidade de Campinas">
         </div>
         <div class="descricao-campinas" id="descricao-campinas">
             <h1 class="titulo-descricao" id="titulo-descricao">O melhor de Campinas, agora ao seu alcance.</h1>
             <p class="descricao" id="descricao">Swiss Park é mais do que um bairro de Campinas, é um estilo de vida! </p> 
-            <div id="campinas"></div>
             <p class="descricao" id="descricao">Imagine acordar todos os dias em um ambiente seguro, cercado por natureza e com toda a infraestrutura que você precisa ao seu alcance.</p> 
             <p class="descricao" id="descricao">Com uma combinação perfeita de tranquilidade e conveniência, o Swiss Park oferece qualidade de vida inigualável. </p> 
+            <div id="campinas"></div>
             <p class="descricao" id="descricao"> E Campinas? Campinas é sinônimo de desenvolvimento, cultura e oportunidades!</p> 
         </div>
     </div>
@@ -75,7 +68,7 @@
             <p class="p-mapa">O Swiss Park está localizado a 88 km da cidade de São Paulo.</p>
             <p class="p-mapa">Acesso pelas rodovias Anhanguera e Bandeirantes a aproximadamente 50 minutos da cidade de São Paulo.</p>
             <p class="p-mapa">Em breve a cidade de Campinas estará conectada com a cidade de São Paulo por meio de um trem de alta velocidade. A estimativa é que o projeto seja inaugurado em 2031.</p>
-            <a href="https://g1.globo.com/sp/campinas-regiao/noticia/2024/05/29/contrato-de-concessao-do-trem-intercidades-entre-campinas-e-sp-e-assinado-nesta-quarta-entenda.ghtml" target="_blank">Saiba mais aqui</a>
+            <a class="link-trem" href="https://g1.globo.com/sp/campinas-regiao/noticia/2024/05/29/contrato-de-concessao-do-trem-intercidades-entre-campinas-e-sp-e-assinado-nesta-quarta-entenda.ghtml" target="_blank">Saiba mais aqui</a>
         </div>
         <div class="mapa" id="mapa">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27934.62278790824!2d-47.111486427842664!3d-22.965166339210345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8c95be2b77315%3A0xd36a9ae3c484e484!2sSwiss%20Park%2C%20Campinas%20-%20SP!5e1!3m2!1spt-BR!2sbr!4v1737567828204!5m2!1spt-BR!2sbr" width="700" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -181,6 +174,9 @@
                         <i class="fa-brands fa-tiktok"></i>
                     </a>
                     <a href="#" class="link-redes" id="link-redes">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="#" class="link-redes" id="link-redes">
                         <i class="fa-brands fa-youtube"></i>
                     </a>
                 </div>
@@ -214,5 +210,6 @@
     <div class="copyright" id="copyright">
         <h3 class="copyright-rodape">© 2025 Move Campinas Imóveis - Todos os direitos reservados</h3>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

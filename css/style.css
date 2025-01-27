@@ -8,23 +8,52 @@
     box-sizing: border-box;
 }
 
-.float{
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:40px;
-	right:45px;
-	background-color:#25d366;
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
-    font-size:30px;
-	box-shadow: 2px 2px 3px #999;
-    z-index:100;
+.float-button {
+    text-decoration: none;
+    position: fixed;
+    padding: 10px;
+    padding-right: 15px;
+    bottom: 30px;
+    right: 30px;
+    color: #fff;
+    background-color:#25D366;
+    border-radius: 25px 30px 5px 25px;
+    z-index: 100;
+    font-family: Arial;
+    font-size: 17px;
+    animation: whatsapp-animation 0.5s ease-in-out;
+    box-shadow: 1px 2px 5px 2px rgba(30,30,30,0.3);
+    transition:all 0.3s ease-out;
 }
 
-.my-float{
-	margin-top:16px;
+.float-button:hover {
+     background-color: #128C7E;
+      color: #fff;
+}
+
+@keyframes whatsapp-animation {
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    body {
+        width: 100%;
+    }
+
+    span {
+        display: none;
+    }
+
+    .float-button {
+        display: none;
+    }
 }
 
 ::-webkit-scrollbar {
@@ -38,7 +67,7 @@
 
 ::-webkit-scrollbar-thumb {
     width: 10px;
-    background-color: #004aad;
+    background-color: #151e45;
 }
 
 body {
@@ -57,17 +86,78 @@ p {
     height: auto;
 }
 
-.navbar {
+.link {
+    color: #C3AC6C;
+    text-decoration: none;
+    display: block;
+    padding: .5rem;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+#header {
+    box-sizing: border-box;
+    height: 70px;
+    padding: 1rem;
     display: flex;
     align-items: center;
-    padding: 10px;
-    background-color: #151E45;
-    flex-direction: row;
-    flex-wrap: wrap;
+    background-color: #151e45;
+    justify-content: space-between;
     position: fixed;
     width: 100%;
-    top: 0;
-    overflow: hidden;
+}
+
+#menu {
+    display: flex;
+    gap: .5rem;
+}
+
+#btn-mobile {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    #btn-mobile {
+        display: block;
+    }
+
+    #menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0px;
+        background-color: #151e45;
+        height: 0px;
+        transition: .6s;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #nav.ativo #menu {
+        height: calc(50vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    #menu a {
+        padding: 1rem;
+        margin: 0 1rem;
+        border-bottom: 2px solid #C3AC6C;
+    }
+
+    #btn-mobile {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        color:#C3AC6C;
+    }
 }
 
 .image-background {
@@ -79,52 +169,6 @@ p {
     align-items: center;
     width: 100%;
     height: 100%;
-}
-
-.banner.inicio {
-    margin-top: 90px;
-}
-
-.logo {
-    flex: auto;
-}
-
-.logo > a {
-    margin-left: 30px;
-}
-
-.link {
-    color: #C3AC6C;
-    text-decoration: none;
-}
-
-.link:hover {
-    text-decoration: underline;
-    transition: 0.3s all ease-in-out;
-}
-
-.nav, .lista {
-    display: flex;
-}
-
-.lista {
-    margin-right: 35px;
-    text-align: center;
-}
-
-.item, .item-ultimo {
-    color: #C3AC6C;
-    list-style: none;
-    font-size: 16px;
-    /* font-weight: bold; */
-}
-
-.item {
-    margin: 0 10px;
-}
-
-.item-ultimo {
-    margin: 0 0 0 10px;
 }
 
 .descricao-campinas {
@@ -279,6 +323,10 @@ p {
     font-size: 16px;
     margin: 10px 0px;
     color: black;
+}
+
+.link-trem {
+    color: #151E45;
 }
 
 .banner.ofertas-imoveis {
@@ -489,7 +537,6 @@ textarea {
     margin: 10px 0px;
     color: #C3AC6C;
     text-transform: uppercase;
-    /* border: 1px solid white; */
 }
 
 .lista-mapa-site, .lista-rodape-contato {
@@ -518,42 +565,20 @@ textarea {
     font-weight: normal;
 }
 
-@media only screen and (max-width: 840px) {
-    
-    .navbar {
-        position: relative;
-    }
+@media only screen and (max-width: 800px) {
 
     .image-background {
         display: none;
     }
-    
-    .image-background > img {
-        display: flex;
-        align-items: center;
-        width: 100%;
-        height: 100%;
-    }
 
-    .nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .titulo-descricao, .descricao {
+        margin: 10px auto;
         text-align: center;
-    }
-
-    .lista {
-        display: block;
-        text-align: center;
-    }
-
-    .item, .item-ultimo {
-        margin: 10px 0;
     }
 
     .banner.campinas {
         background-color: #C3AC6C;
-        padding: 50px 10px;
+        padding: 50px 0px;
         display: flex;
         flex-direction: column;
         align-items: center;
