@@ -41,21 +41,6 @@
     }
 }
 
-@media screen and (max-width: 600px) {
-
-    body {
-        width: 100%;
-    }
-
-    span {
-        display: none;
-    }
-
-    .float-button {
-        display: none;
-    }
-}
-
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -118,50 +103,8 @@ p {
     display: none;
 }
 
-@media (max-width: 600px) {
-    #btn-mobile {
-        display: block;
-    }
-
-    #menu {
-        display: block;
-        position: absolute;
-        width: 100%;
-        top: 70px;
-        right: 0px;
-        background-color: #151e45;
-        height: 0px;
-        transition: .6s;
-        z-index: 1000;
-        visibility: hidden;
-        overflow-y: hidden;
-    }
-
-    #nav.ativo #menu {
-        height: calc(50vh - 70px);
-        visibility: visible;
-        overflow-y: auto;
-    }
-
-    #menu a {
-        padding: 1rem;
-        margin: 0 1rem;
-        border-bottom: 2px solid #C3AC6C;
-    }
-
-    #btn-mobile {
-        display: flex;
-        padding: .5rem 1rem;
-        font-size: 1rem;
-        border: none;
-        background: none;
-        cursor: pointer;
-        color:#C3AC6C;
-    }
-}
-
 .image-background {
-    height: 600px;
+    height: 670px;
 }
 
 .image-background > img {
@@ -174,7 +117,6 @@ p {
 .descricao-campinas {
     padding: 10px;
     background-color: #151e45;
-    /* opacity: 0.8; */
     color: white;
     text-align: center;
 }
@@ -194,10 +136,11 @@ p {
 
 .banner.campinas {
     background-color: #C3AC6C;
-    padding: 50px 10px;
+    padding: 50px 16px;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
 }
 
 .texto-inovacao,.slide-inovacao, .mapa {
@@ -205,20 +148,27 @@ p {
 }
 
 .texto-inovacao {
-    margin: 10px 35px;
+    margin: 10px 5px;
     color: white;
 }
 
 .slide-inovacao {
-    margin-top: 15px;
-    margin-bottom: 12px;
-    margin-right: 35px;
+    margin: 10px 5px;
 }
 
 .slide-inovacao > video {
     border-radius: 8px;
     width: 700px;
     height: 400px;
+}
+
+.banner.swiss-park {
+    background-color: #2e61bc;
+    padding: 50px 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .slide-swiss > video {
@@ -251,26 +201,24 @@ p {
     display: flex;
     align-items: center;
     flex: auto;
-    margin: 17px 35px;
+    margin: 10px 5px;
 }
 
-.banner.swiss-park {
-    background-color: #2e61bc;
-    padding: 50px 10px;
+.banner.campinas {
+    background-color: #C3AC6C;
+    padding: 50px 16px;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
 }
 
 .texto-swiss-park > h1, .texto-swiss-park > h2, .texto-swiss-park > p {
     text-align: end;
-    margin: 10px 0px;
+    margin: 10px 5px;
 }
 
 .texto-swiss-park {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-right: 35px;
     color: white;
 }
 
@@ -287,22 +235,22 @@ p {
 .texto-swiss-park > p {
     font-size: 16px;
     text-align: end;
-    margin-left: 20px;
 }
 
 .banner.local {
     background-color: #f2f5f9;
-    padding: 50px 10px;
+    padding: 50px 16px;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
 }
 
 .mapa {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    margin-right: 35px;
+    margin: 10px;
 }
 
 .mapa > iframe {
@@ -310,7 +258,7 @@ p {
 }
 
 .texto-mapa {
-    margin: 10px 32px;
+    margin: 10px;
 }
 
 .titulo-mapa {
@@ -330,7 +278,7 @@ p {
 }
 
 .banner.ofertas-imoveis {
-    /* background-color: #004aad; */
+    background-color: #004aad;
     padding: 50px 10px;
     display: flex;
     flex-direction: column;
@@ -338,7 +286,7 @@ p {
 }
 
 .titulo-imoveis-ofertas {
-    color: black;
+    color: white;
     margin: 10px 0px;
     text-align: center;
     font-size: 30px;
@@ -346,7 +294,7 @@ p {
 }
 
 .descricao-imoveis-ofertas {
-    color: black;
+    color: white;
     margin: 10px 0px;
     text-align: center;
     font-size: 16px;
@@ -359,9 +307,9 @@ p {
 }
 
 .video-casa > video {
-    margin: 10px 0px;
-    width: 600px;
-    height: 336px;
+    width: 500px;
+    height: 375px;
+    border-radius: 4px;
 }
 
 .oferta {
@@ -370,7 +318,6 @@ p {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 10px;
     background-color: white;
     width: 600px;
     border-radius: 4px;
@@ -378,13 +325,11 @@ p {
 
 .titulo-desc-casa {
     font-size: 30px;
-    margin: 10px 0px;
 }
 
 .informacoes {
     text-align: justify;
     list-style: none;
-    margin: 0 15px;
 }
 
 .item-info {
@@ -426,16 +371,7 @@ p {
     color: white;
 }
 
-.setas {
-    color: white;
-    font-size: 30px;
-}
-
-.setas > i {
-    margin: 10px;
-}
-
-.banner.contato {
+/* .banner.contato {
     background-color: #5b5b5b;
     padding: 50px 10px;
     display: flex;
@@ -497,12 +433,12 @@ textarea {
     color: white;
     background-color: #151e45;
     border-radius: 4px;
-}
+} */
  
 .banner.rodape {
     height: auto;
     background-color: #151e45;
-    padding: 50px 10px;
+    padding: 50px 16px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -565,201 +501,154 @@ textarea {
     font-weight: normal;
 }
 
-@media only screen and (max-width: 800px) {
+@media (max-width: 600px) {
 
-    .image-background {
-        display: none;
+    #btn-mobile {
+        display: block;
     }
 
-    .titulo-descricao, .descricao {
-        margin: 10px auto;
-        text-align: center;
+    #menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0px;
+        background-color: #151e45;
+        height: 0px;
+        transition: .6s;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #nav.ativo #menu {
+        height: calc(50vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    #menu a {
+        padding: 1rem;
+        margin: 0 1rem;
+        border-bottom: 2px solid #C3AC6C;
+    }
+
+    #btn-mobile {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        color:#C3AC6C;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .image-background {
+        height: 280px;
     }
 
     .banner.campinas {
-        background-color: #C3AC6C;
-        padding: 50px 0px;
+        padding: 16px;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        justify-content: center;
+    }
+    
+    .texto-inovacao {
+        margin: 10px 5px;
+        color: white;
+    }
+    
+    .slide-inovacao {
+        margin: 10px 5px;
+    }
+    
+    .slide-inovacao > video {
+        border-radius: 8px;
+        width: 280px;
+        height: 160px;
     }
 
     .banner.swiss-park {
-        background-color: #2e61bc;
-        padding: 50px 10px;
-        display: flex;
+        padding: 16px;
         flex-direction: column;
-        align-items: center;
-    }
-
-    .slide-inovacao, .slide-swiss {
-        margin-top: 15px;
-        margin-bottom: 15px;
-        margin-right: 0;
-        margin-left: 0;
+        justify-content: center;
     }
     
-    .slide-inovacao > video, .slide-swiss > video {
+    .slide-swiss > video {
         border-radius: 8px;
-        width: 290px;
-        height: 165px;
+        width: 280px;
+        height: 160px;
     }
 
     .banner.local {
-        background-color: #f2f5f9;
-        padding: 50px 10px;
+        padding: 16px;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        justify-content: center;
     }
 
-    .texto-mapa {
-        margin: 10px 32px;
+    .banner.local {
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
-
+    
     .mapa {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        margin: 0 auto;
-    }
-
-    .mapa > iframe {
-        border-radius: 8px;
-        width: 290px;
-        height: 165px;
-        margin: 15px 0px;
+        align-items: flex-end;
+        margin: 10px;
     }
     
-    .titulo-mapa {
-        font-size: 30px;
-        margin: 0;
-        font-weight: bold;
+    .mapa > iframe {
+        border-radius: 4px;
+        width: 280px;
+        height: 160px;
     }
 
     .grid-ofertas {
         display: grid;
         grid-template-columns: auto;
+        margin: 10px;
     }
-
+    
+    .video-casa > video {
+        width: 220px;
+        height: 165px;
+        border-radius: 4px;
+    }
+    
     .oferta {
-        margin: 5px 15px;
+        margin: 10px;
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
         background-color: white;
-        border-radius: 4px;
-    }
-
-    .video-casa > video {
-        margin: 0px;
         width: 280px;
-        height: 280px;
+        border-radius: 4px;
     }
 
     .titulo-desc-casa {
         font-size: 20px;
     }
 
-    .informacoes {
-        text-align: center;
-        list-style: none;
-        margin: 0 15px;
-        font-size: 12px;
+    .item-info {
+        margin: 10px 0px;
+        font-size: 10px;
     }
 
     .btns-imovel {
-        display: flex;
         flex-direction: column;
-        align-items: center;
-        text-align: center;
-        font-size: 12px;
-    }
-    
-    .btns-imovel > a {
-        margin: 10px;
-    }
-
-    .banner.contato {
-        background-color: #5b5b5b;
-        padding: 50px 10px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .form-contato {
-        display: flex;
-        align-items: center;
-        flex: auto;
-        margin: 10px auto;
-    }
-    
-    .form-contato > form {
-        align-items: center;
-        background-color: white;
-        padding: 20px 10px;
-        display: flex;
-        flex-direction: column;
-        width: 280px;
-        border-radius: 4px;
-    }
-    
-    .campo {
-        width: 240px;
-        height: 30px;
-    }
-    
-    textarea {
-        width: 240px;
-        height: 200px;
-        resize: none;
-    }
-    
-    .titulo-contato, .p-contato {
-        text-align: center;
-        color: white;
-        margin: 10px auto;
-    }
-    
-    .titulo-contato {
-        font-size: 20px;
-    }
-    
-    .p-contato {
-        font-size: 12px;
-    }
-    
-    .campo, .legenda {
-        margin: 5px 0px;
-    }
-    
-    .btn-enviar {
-        margin: 5px 0px;
-        border: none;
-        padding: 10px;
-        color: white;
-        background-color: #151e45;
-        border-radius: 4px;
-        font-size: 12px;
-    }
-
-    .saiba-mais, .planta-imovel, .interesse {
-        width: 150px;
-        height: 30px;
-        font-size: 12px;
-        border: none;
-        border-radius: 2px;
     }
 
     .banner.rodape {
-        height: auto;
-        background-color: #151e45;
-        padding: 50px 10px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        padding: 16px;
     }
     
     .grid-rodape {
@@ -767,73 +656,7 @@ textarea {
         grid-template-columns: auto;
     }
     
-    .imagem-logo, .redes-sociais, .mapa-site, .contato-rodape {
-        color: white;
-        text-align: center;
-        padding: 10px;
-        margin: 10px 50px;
-        display: flex;
-        justify-content: flex-start;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .link-redes {
-        margin: 5px;
-        font-size: 12px;
-        text-decoration: none;
-        color: white;
-    }
-    
-    .titulo-redes, .titulo-mapa-site, .titulo-contato-rodape {
-        font-size: 20px;
-        font-weight: normal;
-        margin: 10px 0px;
-        color: #C3AC6C;
-        text-transform: uppercase;
-    }
-    
-    .lista-mapa-site, .lista-rodape-contato {
-        list-style: none;
-    }
-    
-    .item-mapa-site, .itens-contato {
-        color: white;
-        text-decoration: none;
-        font-size: 13px;
-        margin: 10px 0;
-    }
-    
-    .item-mapa-site:hover {
-        text-decoration: underline;
-    }
-    
-    .copyright {
-        padding: 5px;
-        background-color: #C3AC6C;
-        color: white;
-    }
-    
     .copyright-rodape {
-        text-align: center;
-        font-size: 8px;
-        font-weight: normal;
-    }
-
-    .float{
-        position:fixed;
-        width:30px;
-        height:30px;
-        bottom:40px;
-        right:175px;
-        border-radius:50px;
-        text-align:center;
-        font-size:15px;
-        box-shadow: 2px 2px 3px #999;
-        z-index:0;
-    }
-    
-    .my-float{
-        margin-top:8px;
+        font-size: 10px;
     }
 }
