@@ -13,26 +13,22 @@ html {
 }
 
 .float-button {
+    display: flex;
+    justify-content: center;
     text-decoration: none;
     position: fixed;
-    padding: 10px;
-    padding-right: 15px;
+    padding: 15px;
     bottom: 30px;
-    right: 30px;
+    right: 43px;
     color: #fff;
-    background-color:#25D366;
-    border-radius: 25px 30px 5px 25px;
+    background-color:#008000;
+    border-radius: 50%;
     z-index: 100;
     font-family: Arial;
-    font-size: 17px;
+    font-size: 30px;
     animation: whatsapp-animation 0.5s ease-in-out;
     box-shadow: 1px 2px 5px 2px rgba(30,30,30,0.3);
     transition:all 0.3s ease-out;
-}
-
-.float-button:hover {
-     background-color: #128C7E;
-      color: #fff;
 }
 
 @keyframes whatsapp-animation {
@@ -79,7 +75,7 @@ p {
     color: #C3AC6C;
     text-decoration: none;
     display: block;
-    padding: .5rem;
+    padding: .5rem .5rem;
 }
 
 .link:hover {
@@ -98,6 +94,10 @@ p {
     width: 100%;
 }
 
+#header a {
+    margin: 0 20px;
+}
+
 #menu {
     display: flex;
     gap: .5rem;
@@ -108,7 +108,7 @@ p {
 }
 
 .image-background {
-    height: 670px;
+    height: 635px;
 }
 
 .image-background > img {
@@ -134,7 +134,7 @@ p {
 }
 
 .titulo-descricao, .descricao {
-    margin: 10px 25px;
+    margin: 10px 0px;
     text-align: center;
 }
 
@@ -152,12 +152,12 @@ p {
 }
 
 .texto-inovacao {
-    margin: 10px 5px;
+    margin: 10px 25px;
     color: white;
 }
 
 .slide-inovacao {
-    margin: 10px 5px;
+    margin: 10px 30px;
 }
 
 .slide-inovacao > video {
@@ -205,7 +205,7 @@ p {
     display: flex;
     align-items: center;
     flex: auto;
-    margin: 10px 5px;
+    margin: 0px 25px;
 }
 
 .banner.campinas {
@@ -224,6 +224,7 @@ p {
 
 .texto-swiss-park {
     color: white;
+    margin: 0px 25px;
 }
 
 .texto-swiss-park > h1 {
@@ -254,7 +255,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    margin: 10px;
+    margin: 10px 27px;
 }
 
 .mapa > iframe {
@@ -262,7 +263,7 @@ p {
 }
 
 .texto-mapa {
-    margin: 10px;
+    margin: 10px 25px;
 }
 
 .titulo-mapa {
@@ -317,13 +318,13 @@ p {
 }
 
 .oferta {
-    margin: 0 15px;
+    margin: 0 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     background-color: white;
-    width: 600px;
+    width: 700px;
     border-radius: 4px;
 }
 
@@ -449,8 +450,8 @@ textarea {
 }
 
 .grid-rodape {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
+    display: flex;
+    justify-content: space-between;
 }
 
 .imagem-logo, .redes-sociais, .mapa-site, .contato-rodape {
@@ -529,6 +530,7 @@ textarea {
         height: calc(50vh - 70px);
         visibility: visible;
         overflow-y: auto;
+        border: 2px solid #C3AC6C;
     }
 
     #menu a {
