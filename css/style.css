@@ -666,3 +666,44 @@ textarea {
         font-size: 10px;
     }
 }
+
+@media (max-width: 1024px) {
+    .slide-inovacao > video, .slide-swiss > video {
+        width: 400px;
+        height: 228px;
+    }
+
+    .mapa > iframe {
+        width: 400px;
+        height: 228px;
+    }
+
+    .grid-ofertas {
+        display: grid;
+        grid-template-columns: auto;
+        margin: 10px 0px;
+    }
+    
+    .video-casa > video {
+        width: 500px;
+        height: 375px;
+    }
+    
+    .oferta {
+        margin: 10px 20px;
+    }
+
+    .banner.rodape {
+        height: auto;
+        background-color: #151e45;
+        padding: 50px 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .grid-rodape {
+        display: flex;
+        flex-direction: column;
+    }
+}
