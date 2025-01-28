@@ -667,7 +667,7 @@ textarea {
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1445px) {
     .slide-inovacao > video, .slide-swiss > video {
         width: 400px;
         height: 228px;
